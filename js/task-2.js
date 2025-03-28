@@ -1,30 +1,38 @@
-const images = [
-  {
-    url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
-    alt: "White and Black Long Fur Cat",
-  },
-  {
-    url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
-    alt: "Orange and White Koi Fish Near Yellow Koi Fish",
-  },
-  {
-    url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
-    alt: "Group of Horses Running",
-  },
-  {
-    url: "https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272_1280.jpg",
-    alt: "Alpine Spring Meadows",
-  },
-  {
-    url: "https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255_1280.jpg",
-    alt: "Nature Landscape",
-  },
-  {
-    url: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg",
-    alt: "Lighthouse Coast Sea",
-  }
-];
-const gallery = document.querySelector(".gallery");
-const galleryMarkup = images.map(({ url, alt }) =>
-  `<li class=gallery-item><img src=${url} alt=${alt} class="gallery-image"></li>`).join("");
-gallery.insertAdjacentHTML("afterbegin", galleryMarkup);
+// console.log("Before");
+// const number = prompt("Введіть число", "");
+// console.log(typeof number);
+
+// let msg;
+// if (Number(number)) {
+// if (Number(number) > 12) {
+//    msg = "Ви ввели число, яке більше 12"
+// } else {
+//     msg = "Ви ввели число, яке менше за 12"
+// }
+    
+// } else {
+//     msg = "Ви ввели не число"
+// }
+
+
+// console.log("msg:", msg);
+// console.log("After");
+
+const points = 5000;
+
+
+let message;
+if (points <= 500) {
+    console.log("Level 1");
+    
+    
+} else if (points > 500) {
+ console.log("Level 2");
+}
+  else if (points > 1500) {
+ console.log("Level 3");
+}  else {
+ console.log("Level 4");
+}
+
+// const balance = 1000; 
